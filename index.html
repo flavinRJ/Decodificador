@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Decodificador texto com JS</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho">    
+                <img src="./assets/Frame 7.png" alt="Logo da Alura">
+            </a>    
+        </div>
+    </header>
+    
+    <main>
+
+        <section class="principal">
+
+            <div class="input">
+                <div class="texto">
+                    <textarea id="text-input" placeholder="Digite seu texto..."></textarea>
+                </div>
+
+                <p class="aviso">
+                    Atenção!!! Apenas letras minúsculas e sem acento.
+                </p>
+               
+                <div class="botoes">    
+                    <button class="cripto" onclick="botaoCriptografar()">
+                        Criptografar
+                    </button>
+                    <button class="descripto" onclick="botaoDescriptografar()">
+                        Descriptografar
+                    </button>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box__input">
+                    <img id="img" src="./assets/High quality products 1 1.svg" alt="Menino com uma lupa" width="60%">
+                    <h2>
+                        Nenhuma mensagem encontrada
+                    </h2>
+                    <p>
+                        Digite um texto que você deseja criptografar ou descriptografar.
+                    </p>
+                </div>
+                <div class="conteudo-resultado">
+                    <textarea id="text-output" cols="30" rows="20"></textarea>
+                    <button class="copiar" onclick="copiarTexto()">Copiar texto</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <section>
+            <p>
+                Desenvolvido por Flávio Dev.
+            </p>
+        </section>
+
+    </footer>
+
+<script src="./script.js"></script>   
+</body>
+</html>
